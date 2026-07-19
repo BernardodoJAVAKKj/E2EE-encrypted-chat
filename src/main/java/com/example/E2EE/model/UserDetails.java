@@ -1,4 +1,4 @@
-package org.example.model;
+package com.example.E2EE.model;
 
 
 import jakarta.persistence.*;
@@ -28,6 +28,9 @@ public class UserDetails {
 
     @Column(nullable = false, unique = true, length = 100, name = "CreatedAt")
     private Instant createdAt;
+
+    public UserDetails(String name, String email, String encodedPassword, String publicKey) {
+    }
 
 
     public UUID getUser_id() {

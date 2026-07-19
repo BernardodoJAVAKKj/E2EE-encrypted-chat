@@ -1,4 +1,4 @@
-package org.example.model;
+package com.example.E2EE.model;
 
 import jakarta.persistence.*;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
 package com.example.E2EE.dto;
 
-public class SendMenssageRequest {
+public record  SendMenssageRequest() {
 }
