@@ -45,17 +45,10 @@ public class AuthService {
 
     }
 
-
-
     public UserDetails Login(UserDetails userDetails) {
         if (userRepository.existsByEmail(userDetails.getEmail())) {}
 
-
-
-
-
         return null;
-
     }
 
 }
