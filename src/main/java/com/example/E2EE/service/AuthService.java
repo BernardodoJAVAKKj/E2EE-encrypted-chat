@@ -26,7 +26,7 @@ public class AuthService {
     @Transactional
     public UserDetails register(UserDetails userDetails) {
 
-        if (userRepository.existsById(userDetails.getEmail())) {
+        if (userRepository.existsByEmail(userDetails.getEmail())) {
             throw new UsernameNotFoundException("Id Already Exists");
         }
 
@@ -42,6 +42,19 @@ public class AuthService {
 
 
         return userRepository.save(user);
+
+    }
+
+
+
+    public UserDetails Login(UserDetails userDetails) {
+        if (userRepository.existsByEmail(userDetails.getEmail())) {}
+
+
+
+
+
+        return null;
 
     }
 
